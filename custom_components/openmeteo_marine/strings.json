@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Open Meteo Marine",
+        "description": "Configure marine weather data for your location",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "update_interval": "Update interval (minutes)"
+        }
+      }
+    },
+    "error": {
+      "invalid_latitude": "Invalid latitude value",
+      "invalid_longitude": "Invalid longitude value",
+      "unknown": "Unexpected error occurred"
+    },
+    "abort": {
+      "already_configured": "Location already configured"
+    }
+  }
+}
