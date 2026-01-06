@@ -1,0 +1,34 @@
+# Example Home Assistant configuration.yaml for Open Meteo Marine integration
+
+# Method 1: YAML Configuration (Recommended if UI setup fails)
+# Add this to your configuration.yaml file:
+
+openmeteo_marine:
+  latitude: -33.8908      # Bondi Beach latitude
+  longitude: 151.2743     # Bondi Beach longitude
+  update_interval: 60     # Update every 60 minutes (15-1440 range)
+
+# Alternative locations:
+# New York Harbor: latitude: 40.7128, longitude: -74.0060
+# San Francisco Bay: latitude: 37.7749, longitude: -122.4194
+# London Thames: latitude: 51.5074, longitude: -0.1278
+# Tokyo Bay: latitude: 35.6762, longitude: 139.6503
+
+# Note: After adding this configuration:
+# 1. Restart Home Assistant
+# 2. The sensors will be automatically created
+# 3. Look for entities starting with "sensor.open_meteo_marine_"
+
+# Method 2: UI Configuration (if working)
+# 1. Go to Settings → Devices & Services
+# 2. Click "Add Integration"
+# 3. Search for "Open Meteo Marine"
+# 4. Enter your coordinates and update interval
+
+# Sensor entities that will be created:
+# - sensor.open_meteo_marine_wave_height
+# - sensor.open_meteo_marine_wave_direction
+# - sensor.open_meteo_marine_wave_period
+# - sensor.open_meteo_marine_sea_surface_temperature
+# - sensor.open_meteo_marine_current_velocity
+# - sensor.open_meteo_marine_current_direction
