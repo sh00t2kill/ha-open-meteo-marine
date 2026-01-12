@@ -1,6 +1,4 @@
 {
   "name": "Open Meteo Marine",
-  "hacs": "1.6.0",
-  "iot_class": "Cloud Polling",
   "homeassistant": "2023.1.0"
 }
